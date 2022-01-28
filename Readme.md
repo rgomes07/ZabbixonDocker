@@ -17,3 +17,11 @@ Estrutura dos Containeres Docker para ambiente ZABBIX:
 - Altere o endereço IP de 127.0.0.1 para o endereço IP do contêiner do agente Zabbix.
 - Clique no botão Atualizar.
 
+Tecnologias utilizadas:
+
+- Docker
+- Swarm
+- Zabbix
+- Zabbix agent
+- Linux
+
