@@ -1,4 +1,5 @@
-Criando a estrutura dos containeres Zabbix
+
+Criando a estrutura dos containeres Zabbix:
 
 1. Container Banco de Dados Zabbix (mysql)
 
@@ -58,6 +59,4 @@ docker inspect zabbix-agent | egrep -i "IPAddress\":"
 Edite o host chamado Zabbix Server. (Acesse a aplicação via docker-host:porta)
 Altere o endereço IP de 127.0.0.1 para o endereço IP do contêiner de agent Zabbix.
 Clique no botão Atualizar.
-
-
 
