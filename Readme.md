@@ -1,6 +1,11 @@
 ZABBIXONDOCKER
 ![zabbixondocker](https://user-images.githubusercontent.com/91737184/151592411-d1465efc-5fb2-4455-a0c2-3bce8092a0ec.jpg)
 
+Descrição do Projeto
+
+Este projeto tem como finalidade implantar toda a estrutura de containeres para um ambiente Zabbix.
+O sistema garantirá o monitoramento diário, continuo e remoto 24x7 dos hosts de sua organização.
+
 Estrutura dos Containeres Docker para ambiente ZABBIX:
 
 - Os containeres estão standalone;
