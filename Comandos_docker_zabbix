@@ -1,15 +1,16 @@
+
 Comandos Docker containers Zabbix
 
-1 . root@swarm06:~# docker ps |grep zabbix
+docker ps |grep zabbix
 2c00b3ffbf22   zabbix/zabbix-agent             "/sbin/tini -- /usr/…"   2 days ago     Up 2 days     10050/tcp                                              zabbix-agent
 4a8a8d0f77f6   zabbix/zabbix-web-nginx-mysql   "docker-entrypoint.sh"   2 days ago     Up 44 hours   8443/tcp, 0.0.0.0:8090->8080/tcp, :::8090->8080/tcp    zabbix-web-nginx-mysql
 dbcd3e963964   zabbix/zabbix-server-mysql      "/sbin/tini -- /usr/…"   2 days ago     Up 44 hours   0.0.0.0:10051->10051/tcp, :::10051->10051/tcp          zabbix-server
 15b33be2ebdc   zabbix/zabbix-java-gateway      "docker-entrypoint.s…"   2 days ago     Up 2 days     10052/tcp                                              zabbix-java-gateway
 8ce418a7952b   mysql                           "docker-entrypoint.s…"   2 days ago     Up 2 days     0.0.0.0:3306->3306/tcp, :::3306->3306/tcp, 33060/tcp   mysql-server-zabbix
 
-2 . root@swarm06:~# docker inspect zabbix-agent | egrep -i "IPAddress\":"
+docker inspect zabbix-agent | egrep -i "IPAddress\":"
             "IPAddress": "172.17.0.6",
                     "IPAddress": "172.17.0.6",
 
-3 . root@swarm06:~# docker inspect mysql-server-zabbix -f {{.Mounts}}
+docker inspect mysql-server-zabbix -f {{.Mounts}}
 [{bind  /var/dir_app/zabbix/zbx_dbdados /var/lib/mysql   true rprivate}]
